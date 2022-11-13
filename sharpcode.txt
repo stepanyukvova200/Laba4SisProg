@@ -1,0 +1,27 @@
+// some comment
+int n1 = 123, n2 = -321;
+float n3 = 0;
+bool ans = false;
+
+n1 = (n1 < 0 && n2 < 0) ? n1 : -n1;
+
+while (true)
+{
+
+    if (n1 > n2)
+    {
+        n2 += n1;
+        n3++;
+    }
+    else
+        n1 += n2;
+    if (n1 > 0 && n2 > 0)
+    {
+        ans = true;
+        break;
+    }
+}
+Console.WriteLine("Some ans -> " + ans);
+//try this
+double a = 2.28;
+int b = 0xFAC2;
